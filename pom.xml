@@ -6,7 +6,7 @@
     <groupId>com.controller-service-impl</groupId>
     <artifactId>conserimpl</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <repositories>
         <repository>
             <id>jitpack.io</id>
@@ -19,7 +19,6 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.26</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -27,19 +26,7 @@
         </dependency>
     </dependencies>
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
         <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
             <resource>
                 <directory>src/main/resources</directory>
                 <!-- <targetPath>BOOT-INF/lib/</targetPath> -->
