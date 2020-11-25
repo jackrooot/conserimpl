@@ -193,7 +193,7 @@ public class Generator {
         String path=systemWorkPath+"\\src\\main\\java\\"+systemRelativePath+"\\"+className+".java";
         String appPath=systemWorkPath+"\\src\\main\\java\\"+systemRelativePath;
         String appPathToResources=systemWorkPath+"\\src\\main\\resources\\";
-        HashMap<String, String> stringStringHashMap = new HashMap<>();
+        HashMap<String, String> stringStringHashMap = new HashMap<String, String>();
         stringStringHashMap.put("classRelativePath",classRelativePath);
         stringStringHashMap.put("classRelativePathThrowClassName",classRelativeThrowClassNamePath);
         stringStringHashMap.put("className",className);
