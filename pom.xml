@@ -6,7 +6,6 @@
     <groupId>com.controller-service-impl</groupId>
     <artifactId>conserimpl</artifactId>
     <version>1.0</version>
-    <packaging>pom</packaging>
     <repositories>
         <repository>
             <id>jitpack.io</id>
@@ -26,6 +25,12 @@
         </dependency>
     </dependencies>
     <build>
+        <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
